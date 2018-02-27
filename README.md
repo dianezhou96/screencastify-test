@@ -13,7 +13,7 @@ Upon loading the website, a window pops up asking whether to record the screen o
 Upon closing the window, screen sharing stops and a new window pops up. Edit scripts/page.js to decide how to handle the video.
 
 ## Testing ##
-To test using Python3, navigate to main folder on Terminal and type:
+To test using Python3, navigate to repository folder on Terminal and type:
 ```
 python3 -m http.server
 ```
