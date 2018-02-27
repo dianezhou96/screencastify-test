@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My test page</title>
+	</head>
+	<h1>
+	</h1>
+
+	<body>
+		<img src="images/tim-the-beaver-1.png" alt="Tim the Beaver">
+		<p>	<button>How do I feel today?</button>
+		<script src="scripts/main.js"></script>
+		<script src="https://www.screencastify.com/libs-api/castify-api.js"></script>
+		<script>
+			screencastify.setAppId(5672880455548928);
+			screencastify.isAppConnected().then(function(isConnected) {
+			  console.log('App is ' + (isConnected ? 'connected' : 'not connected'));
+			});
+			// screencastify.connectApp();
+			var recorder = new screencastify.Recorder();
+			recorder.start({
+			  recordConfig: {  // optional
+			    captureSource: 'desktop',  // for window picker, use 'screen' for screen picker
+			    audio: {
+			      mic: true,
+			      system: false
+			    }
+			  },
+			  shareUrl: 'http://localhost:8000/page.html',  // URL of your page that handles shared files.
+			}).then(function() {
+			  // recording has been started
+			});
+		</script>
+	</body>
+</html>
