@@ -8,6 +8,5 @@ myButton.onclick = function() {
 
 var myWindow = document.querySelector('window');
 myWindow.onbeforeunload = function(e) {
-	alert('do you want to quit?');
 	recorder.stop();
 }
