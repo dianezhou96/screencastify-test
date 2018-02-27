@@ -22,5 +22,5 @@ On Google Chrome, go to
 http://localhost:8000
 
 ## Helpful Links ##
-[Setting Up Screencastify](https://help.screencastify.com/category/131-initial-setup)
-[Screencastify API](https://github.com/w69b/castify-api-docs)
+* [Setting Up Screencastify](https://help.screencastify.com/category/131-initial-setup)
+* [Screencastify API](https://github.com/w69b/castify-api-docs)
